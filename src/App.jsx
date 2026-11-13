@@ -1,10 +1,12 @@
 import Button from './components/atoms/Button'
+import Header from './components/organisms/Header'
 import './styles/main.scss'
 
 function App() {
 
   return (
     <>
+      <Header />
       <Button onClick={() => alert('test')} variant="icon" modifier="primary">
         Leer
         <svg

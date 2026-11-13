@@ -1,0 +1,41 @@
+.btn {
+  color: v.$color-gray-100;
+
+  border: none;
+  border-radius: v.$sizes-radius-4;
+
+  padding: v.$sizes-spacing-8 v.$sizes-spacing-16;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &--primary {
+    background-color: v.$color-purple-600;
+
+    &:hover {
+      background-color: v.$color-yellow-400;
+      color: v.$color-gray-800;
+    }
+  }
+
+  &--secondary {
+    background-color: v.$color-gray-800;
+    color: v.$color-gray-100;
+
+    &:hover {
+      background-color: v.$color-gray-400;
+      color: v.$color-gray-800;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: v.$sizes-spacing-4;
+    flex-shrink: 0;
+
+    svg {
+      width: 16px;
+    }
+  }
+}

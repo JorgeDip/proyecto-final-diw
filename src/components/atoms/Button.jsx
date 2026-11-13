@@ -1,8 +1,8 @@
 
-import styles from './Button.module.scss';
+import './Button.scss';
 function Button({ children, onClick, variant = 'primary', modifier, disabled = false, type = 'button' }) {
 
-    const buttonClass = `${styles.btn} ${modifier ? styles[`btn__${variant}`] : ''} ${styles[`btn--${modifier}`]}`;
+    const buttonClass = `btn ${modifier ? `btn__${variant}` : ''} ${`btn--${modifier}`}`;
 
     return <button
         type={type}
