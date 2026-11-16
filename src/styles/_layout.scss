@@ -1,20 +1,27 @@
-@use 'mixins' as *;
+@use "mixins" as *;
+@use "reset";
 
 .grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
 
-  @include respond('medium') {
+  @include respond("medium") {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include respond('large') {
+  @include respond("large") {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .container {
-  width: 1120px;
   margin: 0 auto;
+  max-width: 90%;
+  @include respond("medium") {
+    max-width: 800px;
+  }
+  @include respond("large") {
+    max-width: 1200px;
+  }
 }
