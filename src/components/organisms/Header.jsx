@@ -1,5 +1,11 @@
 import './Header.scss';
+
+import { useState } from 'react';
+
 function Header() {
+    const [isMenuActive, setIsMenuActive] = useState(false);
+
+
     return (
         <header>
             <div className="navbar container">
@@ -23,16 +29,25 @@ function Header() {
                     LNBookshelf
                 </a>
 
-                <ul className="navbar__menu">
+                <ul className={`navbar__menu ${isMenuActive ? 'active' : ''}`}>
                     <li className="menu-item"><a href="#">Inicio</a></li>
                     <li className="menu-item"><a href="#">Biblioteca</a></li>
                     <li className="menu-item"><a href="#">Ranking</a></li>
                     <li className="menu-item"><a href="#">Comunidad</a></li>
                 </ul>
 
-                <div className="">
-                    a
+                <div className={`navbar__hamburger ${isMenuActive ? 'active' : 'hidden'}`} onClick={() => setIsMenuActive(!isMenuActive)}>
+                    {isMenuActive ? (
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    ) : (
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 6H21M3 12H21M3 18H21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    )}
                 </div>
+
             </div>
         </header>
     );
