@@ -1,7 +1,10 @@
 # P3.1 Maquetación con Vite y SASS
 
 **S2DAW Diseño Web**
+
 **Autor:** _Jorge Rodríguez Rodríguez_
+
+**Página publicada:** [https://jorgedip.github.io/proyecto-final-diw/](https://jorgedip.github.io/proyecto-final-diw/)
 
 ---
 
