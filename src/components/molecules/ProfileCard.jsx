@@ -5,7 +5,7 @@ function ProfileCard() {
 
             <div className="profile-card__content">
                 <div className="card-content__image">
-                    <img src="/images/perfil2.webp" alt="Jorge Rodríguez Rodríguez" />
+                    <img src="/proyecto-final-diw/images/perfil2.webp" alt="Jorge Rodríguez Rodríguez" />
                 </div>
                 <h3 className="card-content__name">
                     Jorge Rodríguez Rodríguez
