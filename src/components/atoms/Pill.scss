@@ -3,7 +3,7 @@
   align-items: center;
   gap: v.$sizes-spacing-4;
 
-  padding: v.$sizes-spacing-4 v.$sizes-spacing-6;
+  padding: v.$sizes-spacing-4 v.$sizes-spacing-8;
   border-radius: v.$sizes-radius-4;
   color: #fff;
   font-size: 13px;
@@ -35,6 +35,7 @@
 
   &--rank-silver {
     background-color: v.$color-gray-400;
+    color: #000;
   }
   &--rank-bronze {
     background-color: v.$color-yellow-500;
