@@ -9,19 +9,19 @@ const books = [
         max_chapters: "100"
     },
     {
-        image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_2.jpeg",
+        image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/the_kings_avatar.jpg",
         score: "3.7",
         last_chapter: "22",
         max_chapters: "154"
     },
     {
-        image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_3.jpeg",
+        image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/super_gene.jpg",
         score: "4.3",
         last_chapter: "371",
         max_chapters: "1288"
     },
     {
-        image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_4.jpeg",
+        image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/the_grave_robbers_chronicles.jpg",
         score: "4.9",
         last_chapter: "2560",
         max_chapters: "3795"
