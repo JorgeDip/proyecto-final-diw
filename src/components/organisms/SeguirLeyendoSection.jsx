@@ -10,21 +10,21 @@ const books = [
     },
     {
         image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_2.jpeg",
-        score: "3.5",
-        last_chapter: "55",
-        max_chapters: "100"
+        score: "3.7",
+        last_chapter: "22",
+        max_chapters: "154"
     },
     {
         image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_3.jpeg",
-        score: "3.5",
-        last_chapter: "55",
-        max_chapters: "100"
+        score: "4.3",
+        last_chapter: "371",
+        max_chapters: "1288"
     },
     {
         image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_4.jpeg",
-        score: "3.5",
-        last_chapter: "55",
-        max_chapters: "100"
+        score: "4.9",
+        last_chapter: "2560",
+        max_chapters: "3795"
     },
 ];
 function SeguirLeyendoSection() {
