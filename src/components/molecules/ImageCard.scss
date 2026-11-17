@@ -1,17 +1,16 @@
 .image-card {
-  width: 265px;
+  width: 100%;
   height: 400px;
   position: relative;
 
   border: 1px solid v.$color-purple-600;
   border-radius: v.$sizes-radius-8;
 
-  overflow: auto;
+  overflow: hidden;
 
   &:hover &__image {
     img {
       scale: 1.1;
-      transition: scale 0.3s linear;
     }
   }
 
@@ -22,6 +21,7 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
+      transition: scale 0.3s ease;
     }
   }
 

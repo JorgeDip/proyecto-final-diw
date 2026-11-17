@@ -1,4 +1,4 @@
-import './profile-card.scss';
+import './ProfileCard.scss';
 function ProfileCard() {
     return (
         <div className="profile-card">
@@ -7,9 +7,9 @@ function ProfileCard() {
                 <div className="card-content__image">
                     <img src="/images/perfil2.webp" alt="Jorge Rodríguez Rodríguez" />
                 </div>
-                <h2 className="card-content__name">
+                <h3 className="card-content__name">
                     Jorge Rodríguez Rodríguez
-                </h2>
+                </h3>
             </div>
 
             <div className="profile-card__stats">

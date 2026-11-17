@@ -1,8 +1,8 @@
 import './Header.scss';
 
-import Hamburger from '../atoms/Hamburger'
-import Close from '../atoms/Close'
-import Logo from '../atoms/Logo'
+import HamburgerIcon from '../ui/HamburgerIcon';
+import CloseIcon from '../ui/CloseIcon';
+import Logo from '../ui/Logo';
 import { useState } from 'react';
 
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
 
 
                 <div className={`navbar__hamburger ${isMenuActive ? 'active' : ''}`} onClick={() => setIsMenuActive(!isMenuActive)}>
-                    {isMenuActive ? <Hamburger /> : <Close />}
+                    {isMenuActive ? <HamburgerIcon /> : <CloseIcon />}
                 </div>
 
             </div>

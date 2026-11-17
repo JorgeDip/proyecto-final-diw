@@ -1,0 +1,42 @@
+.pill {
+  display: flex;
+  align-items: center;
+  gap: v.$sizes-spacing-4;
+
+  padding: v.$sizes-spacing-4 v.$sizes-spacing-6;
+  border-radius: v.$sizes-radius-4;
+  color: #fff;
+  font-size: 13px;
+
+  svg {
+    width: 13px;
+    height: auto;
+  }
+
+  &--primary {
+    background-color: v.$color-purple-600;
+  }
+
+  &--chapters {
+    background-color: v.$color-yellow-200;
+    color: #000;
+  }
+  &--score {
+    background-color: v.$color-yellow-400;
+    color: #000;
+  }
+  &--rank {
+    background-color: v.$color-purple-600;
+  }
+  &--rank-gold {
+    background-color: v.$color-yellow-400;
+    color: #000;
+  }
+
+  &--rank-silver {
+    background-color: v.$color-gray-400;
+  }
+  &--rank-bronze {
+    background-color: v.$color-yellow-500;
+  }
+}

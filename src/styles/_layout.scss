@@ -6,6 +6,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
+  justify-items: center;
 
   @include respond("medium") {
     grid-template-columns: repeat(2, 1fr);
@@ -30,6 +31,7 @@
 }
 
 .body-container {
+  margin-top: $sizes-spacing-114;
   display: flex;
   flex-direction: column;
   gap: $sizes-spacing-16;
@@ -45,4 +47,25 @@
 
 .mt-1 {
   margin-top: $size-16;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-family: $font-family-headings;
+  font-size: $sizes-type-font-size-headings-h5;
+  justify-content: center;
+  margin-bottom: $sizes-spacing-16;
+
+  @include respond("medium") {
+    justify-content: start;
+    margin-bottom: $sizes-spacing-24;
+  }
+
+  svg {
+    width: $sizes-icons-24;
+    height: auto;
+    margin-right: $sizes-spacing-8;
+    color: $color-yellow-400;
+  }
 }
