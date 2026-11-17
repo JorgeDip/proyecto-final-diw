@@ -39,10 +39,6 @@
   }
 
   &__hover {
-    display: none;
-  }
-
-  &:hover &__hover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +50,22 @@
     width: 100%;
     height: 100%;
 
-    background-color: #14141499;
+    background-color: #141414cb;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+    svg {
+      stroke: v.$color-purple-400;
+    }
+  }
+
+  &:hover &__hover {
+    opacity: 1;
+    visibility: visible;
   }
 }
