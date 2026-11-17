@@ -1,0 +1,9 @@
+.ver-mas-button {
+  display: flex;
+  justify-content: center;
+  margin-top: v.$sizes-spacing-16;
+
+  .btn {
+    width: 150px;
+  }
+}

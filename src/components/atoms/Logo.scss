@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: v.$size-12;
+
+  color: v.$color-text-default;
+  text-decoration: none;
+  font-family: v.$font-family-logo, sans-serif;
+  font-size: v.$size-28;
+  text-shadow: 1px 3px 0px v.$color-purple-500;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: v.$color-yellow-400;
+  }
+}

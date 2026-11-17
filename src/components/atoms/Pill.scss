@@ -1,9 +1,9 @@
 .pill {
   display: flex;
   align-items: center;
-  gap: v.$sizes-spacing-4;
+  gap: v.$size-4;
 
-  padding: v.$sizes-spacing-4 v.$sizes-spacing-8;
+  padding: v.$size-4 v.$size-8;
   border-radius: v.$sizes-radius-4;
   color: #fff;
   font-size: 13px;

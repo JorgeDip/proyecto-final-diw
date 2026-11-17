@@ -15,6 +15,18 @@
   @include respond("large") {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  &__6 {
+    grid-template-columns: repeat(1, 1fr);
+
+    @include respond("medium") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond("large") {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
 }
 
 .container {
@@ -52,9 +64,11 @@
 .section-title {
   display: flex;
   align-items: center;
+  justify-content: center;
+
   font-family: $font-family-headings;
   font-size: $sizes-type-font-size-headings-h5;
-  justify-content: center;
+  font-weight: $font-weight-bold;
   margin-bottom: $sizes-spacing-16;
 
   @include respond("medium") {

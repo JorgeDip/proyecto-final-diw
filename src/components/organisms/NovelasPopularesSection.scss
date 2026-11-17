@@ -1,0 +1,32 @@
+.novelas-populares {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: v.$sizes-spacing-16;
+
+    .btn {
+      padding: v.$sizes-spacing-4 v.$sizes-spacing-8;
+    }
+
+    .pagination-circles {
+      display: flex;
+      align-items: center;
+      gap: v.$sizes-spacing-8;
+
+      &__circle {
+        width: v.$size-8;
+        height: v.$size-8;
+        border-radius: 50%;
+        background-color: v.$color-gray-200;
+
+        &--active {
+          background-color: v.$color-purple-400;
+        }
+      }
+    }
+  }
+}

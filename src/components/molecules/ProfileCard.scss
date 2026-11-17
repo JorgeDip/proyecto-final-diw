@@ -12,11 +12,11 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: v.$sizes-spacing-24;
+    padding: v.$size-24;
   }
 
   @include respond("large") {
-    padding: v.$sizes-spacing-24;
+    padding: v.$size-24;
   }
 
   &__content {
@@ -72,9 +72,9 @@
     justify-content: space-evenly;
     align-items: center;
     flex-shrink: 0;
-    gap: v.$sizes-spacing-4;
+    gap: v.$size-4;
 
-    padding: v.$sizes-spacing-8;
+    padding: v.$size-8;
     border-radius: v.$sizes-radius-8;
 
     @include respond("medium") {
@@ -84,9 +84,9 @@
     .stat-container {
       display: flex;
       flex-direction: column;
-      gap: v.$sizes-spacing-4;
+      gap: v.$size-4;
 
-      padding: v.$sizes-spacing-8;
+      padding: v.$size-8;
       border-radius: v.$sizes-radius-8;
 
       text-align: center;

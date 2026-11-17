@@ -1,6 +1,7 @@
 import ImageCard from '../molecules/ImageCard';
 import EyeIcon from '../ui/EyeIcon';
 import './SeguirLeyendoSection.scss';
+import VerMasButton from '../atoms/VerMasButton';
 const books = [
     {
         image: "https://pfygdubgszqehygueykn.supabase.co/storage/v1/object/public/media/reverend_insanity_1.jpeg",
@@ -29,7 +30,7 @@ const books = [
 ];
 function SeguirLeyendoSection() {
     return (
-        <section>
+        <section className="seguir-leyendo">
             <h2 className="section-title"><EyeIcon /> Seguir leyendo</h2>
             <div className="grid">
                 {books.map((book, index) => (
@@ -42,6 +43,7 @@ function SeguirLeyendoSection() {
                     />
                 ))}
             </div>
+            <VerMasButton />
         </section>
     );
 }

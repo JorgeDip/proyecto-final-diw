@@ -1,5 +1,8 @@
+import Button from "../atoms/Button";
 import ImageCard from "../molecules/ImageCard";
 import StarIcon from "../ui/StarIcon";
+import ChevronLeftIcon from "../ui/ChevronLeftIcon";
+import ChevronRightIcon from "../ui/ChevronRightIcon";
 import './NovelasPopularesSection.scss';
 const books = [
     {
@@ -21,7 +24,7 @@ const books = [
 ];
 function NovelasPopularesSection() {
     return (
-        <section>
+        <section className="novelas-populares">
             <h2 className="section-title"><StarIcon /> Novelas populares</h2>
             <div className="grid">
                 {books.map((book, index) => (
@@ -31,6 +34,21 @@ function NovelasPopularesSection() {
                         rank={book.rank}
                     />
                 ))}
+            </div>
+            <div className="novelas-populares__pagination">
+                <Button variant="icon" modifier="primary">
+                    <ChevronLeftIcon />
+                </Button>
+
+                <div className="pagination-circles">
+                    <span className="pagination-circles__circle pagination-circles__circle--active"></span>
+                    <span className="pagination-circles__circle"></span>
+                    <span className="pagination-circles__circle"></span>
+                </div>
+
+                <Button variant="icon" modifier="primary">
+                    <ChevronRightIcon />
+                </Button>
             </div>
         </section>
     );

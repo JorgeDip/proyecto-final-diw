@@ -2,7 +2,7 @@ import './Header.scss';
 
 import HamburgerIcon from '../ui/HamburgerIcon';
 import CloseIcon from '../ui/CloseIcon';
-import Logo from '../ui/Logo';
+import Logo from '../atoms/Logo';
 import { useState } from 'react';
 
 function Header() {
@@ -11,10 +11,8 @@ function Header() {
     return (
         <header>
             <div className="navbar container">
-                <a href="#" className="navbar__logo">
-                    <Logo />
-                    LNBookshelf
-                </a>
+
+                <Logo />
 
                 <ul className={`navbar__menu ${isMenuActive ? 'active' : ''}`}>
                     <li className="menu-item"><a href="#">Inicio</a></li>

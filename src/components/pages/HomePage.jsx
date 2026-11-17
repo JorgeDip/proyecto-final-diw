@@ -4,6 +4,7 @@ import Footer from '../layout/Footer';
 import ProfileCard from '../molecules/ProfileCard';
 import SeguirLeyendoSection from '../organisms/SeguirLeyendoSection';
 import NovelasPopularesSection from '../organisms/NovelasPopularesSection';
+import NuevasNovelasSection from '../organisms/NuevasNovelasSection';
 
 function HomePage() {
     return (
@@ -11,6 +12,7 @@ function HomePage() {
             <ProfileCard />
             <SeguirLeyendoSection />
             <NovelasPopularesSection />
+            <NuevasNovelasSection />
         </PageTemplate>
     );
 }
