@@ -90,9 +90,8 @@ header {
     }
 
     &__hamburger {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: block;
+      cursor: pointer;
 
       @include respond("medium") {
         display: none;

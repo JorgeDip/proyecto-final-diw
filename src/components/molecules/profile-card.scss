@@ -1,0 +1,109 @@
+.profile-card {
+  width: 100%;
+  background-color: v.$color-surface-background;
+
+  border-radius: v.$sizes-radius-8;
+  border: 1px solid v.$color-purple-600;
+
+  padding: v.$sizes-spacing-8;
+
+  @include respond("medium") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: v.$sizes-spacing-24;
+  }
+
+  @include respond("large") {
+    padding: v.$sizes-spacing-24;
+  }
+
+  &__content {
+    display: none;
+
+    @include respond("medium") {
+      display: flex;
+      align-items: center;
+      gap: v.$sizes-spacing-16;
+
+      .card-content {
+        &__image {
+          display: none;
+        }
+
+        &__name {
+          font-size: v.$sizes-type-font-size-headings-h6;
+          color: v.$color-yellow-300;
+        }
+      }
+    }
+
+    @include respond("large") {
+      gap: v.$sizes-spacing-8;
+
+      .card-content {
+        &__image {
+          display: block;
+          width: 120px;
+
+          border-radius: v.$sizes-radius-200;
+          overflow: hidden;
+
+          margin-right: v.$sizes-spacing-8;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__name {
+          font-size: v.$sizes-type-font-size-headings-h4;
+        }
+      }
+    }
+  }
+
+  &__stats {
+    background-color: v.$color-purple-700;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    gap: v.$sizes-spacing-4;
+
+    padding: v.$sizes-spacing-8;
+    border-radius: v.$sizes-radius-8;
+
+    @include respond("medium") {
+      justify-content: space-between;
+    }
+
+    .stat-container {
+      display: flex;
+      flex-direction: column;
+      gap: v.$sizes-spacing-4;
+
+      padding: v.$sizes-spacing-8;
+      border-radius: v.$sizes-radius-8;
+
+      text-align: center;
+
+      &--highlighted {
+        background: v.$color-purple-600;
+      }
+
+      &__number {
+        font-size: v.$sizes-type-font-size-body-xl;
+        color: v.$color-yellow-300;
+      }
+
+      &__label {
+        font-size: v.$sizes-type-font-size-body-xs;
+        color: v.$color-gray-100;
+      }
+    }
+  }
+}

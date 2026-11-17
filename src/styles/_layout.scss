@@ -1,5 +1,6 @@
 @use "mixins" as *;
 @use "reset";
+@use "variables" as *;
 
 .grid {
   display: grid;
@@ -11,17 +12,37 @@
   }
 
   @include respond("large") {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 90%;
+  width: 90%;
   @include respond("medium") {
     max-width: 800px;
+    width: 70%;
   }
   @include respond("large") {
-    max-width: 1200px;
+    max-width: 1120px;
+    width: 100%;
   }
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  gap: $sizes-spacing-16;
+
+  @include respond("medium") {
+    gap: $sizes-spacing-24;
+  }
+
+  @include respond("large") {
+    gap: $sizes-spacing-32;
+  }
+}
+
+.mt-1 {
+  margin-top: $size-16;
 }
