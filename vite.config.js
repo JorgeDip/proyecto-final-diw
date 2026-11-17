@@ -1,12 +1,19 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import { fileURLToPath, URL } from 'node:url' // Nativo de Node.js
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import { fileURLToPath, URL } from "node:url"; // Nativo de Node.js
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'docs',
+    root: "./src", // Cambia la raíz del proyecto a "src"
+    outDir: "../docs", // Cambia el directorio de salida
+    rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL("./index.html", import.meta.url)),
+      },
+    },
   },
+  base: "./",
   css: {
     preprocessorOptions: {
       scss: {
@@ -18,7 +25,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Esto le dice a Vite que '@' apunta a la carpeta 'src'
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-})
+});
