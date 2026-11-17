@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     root: "./src", // Cambia la raíz del proyecto a "src"
-    outDir: "../docs", // Cambia el directorio de salida
+    outDir: "./docs", // Cambia el directorio de salida
     rollupOptions: {
       input: {
         main: fileURLToPath(new URL("./index.html", import.meta.url)),
