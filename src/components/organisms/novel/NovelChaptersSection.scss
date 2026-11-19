@@ -6,14 +6,4 @@
     border-radius: v.$sizes-radius-8;
     border: 1px solid v.$color-border-primary;
   }
-
-  &__header {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px 100px;
-  }
-
-  &__item {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px 100px;
-  }
 }

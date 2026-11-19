@@ -1,0 +1,9 @@
+.novel-chapters__item {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px 100px;
+
+  &--header {
+    font-size: v.$sizes-type-font-size-body-sm;
+    font-family: v.$font-family-headings;
+  }
+}

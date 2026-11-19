@@ -1,3 +1,4 @@
+import ChapterListItem from '../../atoms/ChapterListItem';
 import './NovelChaptersSection.scss';
 function NovelChaptersSection() {
     return (
@@ -6,18 +7,10 @@ function NovelChaptersSection() {
 
             <div className="novel-chapters__list">
                 <div className="novel-chapters__header">
-                    <span className="novel-chapters__header-item">#</span>
-                    <span className="novel-chapters__header-item">Título</span>
-                    <span className="novel-chapters__header-item">Fecha</span>
-                    <span className="novel-chapters__header-item">Estado</span>
+                    <ChapterListItem number="Nº" title="Título" date="Fecha" status="Estado" isHeader={true} />
                 </div>
                 <div className="novel-chapters__body">
-                    <div className="novel-chapters__item">
-                        <span className="novel-chapters__item-number">1</span>
-                        <span className="novel-chapters__item-title">El artefacto perdido</span>
-                        <span className="novel-chapters__item-date">2023-01-01</span>
-                        <span className="novel-chapters__item-status">Publicado</span>
-                    </div>
+                    <ChapterListItem number="1" title="El comienzo de la aventura" date="hace 1 día" status="publicado" />
                 </div>
             </div>
         </div>
