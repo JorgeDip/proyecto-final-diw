@@ -40,4 +40,24 @@
   &--rank-bronze {
     background-color: v.$color-yellow-500;
   }
+
+  &--genre {
+    background-color: v.$color-surface-background;
+
+    padding: v.$size-6 v.$size-16;
+
+    color: v.$color-yellow-400;
+
+    border-radius: v.$sizes-radius-200;
+    border: 1px solid v.$color-border-primary;
+
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      background-color: v.$color-surface-background-primary;
+      color: v.$color-text-heading-white;
+    }
+  }
 }

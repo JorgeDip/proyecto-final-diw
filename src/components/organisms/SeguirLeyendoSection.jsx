@@ -28,7 +28,7 @@ const books = [
         max_chapters: "3795"
     },
 ];
-function SeguirLeyendoSection() {
+function SeguirLeyendoSection({ setPage }) {
     return (
         <section className="seguir-leyendo">
             <h2 className="section-title"><EyeIcon /> Seguir leyendo</h2>
@@ -40,6 +40,7 @@ function SeguirLeyendoSection() {
                         score={book.score}
                         last_chapter={book.last_chapter}
                         max_chapters={book.max_chapters}
+                        onClick={() => setPage('novel')}
                     />
                 ))}
             </div>

@@ -6,11 +6,11 @@ import SeguirLeyendoSection from '../organisms/SeguirLeyendoSection';
 import NovelasPopularesSection from '../organisms/NovelasPopularesSection';
 import NuevasNovelasSection from '../organisms/NuevasNovelasSection';
 
-function HomePage() {
+function HomePage({ setPage }) {
     return (
-        <PageTemplate header={<Header />} footer={<Footer />}>
+        <PageTemplate header={<Header setPage={setPage} />} footer={<Footer />}>
             <ProfileCard />
-            <SeguirLeyendoSection />
+            <SeguirLeyendoSection setPage={setPage} />
             <NovelasPopularesSection />
             <NuevasNovelasSection />
         </PageTemplate>

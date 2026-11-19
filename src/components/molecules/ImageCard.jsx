@@ -4,7 +4,17 @@ import StarIcon from '../ui/StarIcon';
 import BookIcon from '../ui/BookIcon';
 import './ImageCard.scss';
 
-function ImageCard({ score = null, last_chapter = null, max_chapters = null, image = null, rank = null }) {
+function ImageCard({ score = null, last_chapter = null, max_chapters = null, image = null, rank = null, onClick = null }) {
+    if (!score && !last_chapter && !max_chapters && !onClick && !rank) {
+        return (
+            <div className="image-card">
+                <div className="image-card__image">
+                    <img src={image} alt="Card image" />
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="image-card">
             <div className="image-card__image">
@@ -28,7 +38,7 @@ function ImageCard({ score = null, last_chapter = null, max_chapters = null, ima
                         </Pill>
                     )}
                 </div>
-                <Button modifier="primary">
+                <Button modifier="primary" onClick={onClick}>
                     {rank ? "Empezar a leer" : "Continuar leyendo"}
                 </Button>
             </div>

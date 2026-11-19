@@ -1,11 +1,17 @@
 import HomePage from './components/pages/HomePage'
+import NovelPage from './components/pages/NovelPage'
 import './styles/main.scss'
+import { useState } from 'react';
 
 function App() {
+  const [page, setPage] = useState('novel');
+  if (page === 'home') {
+    return <HomePage setPage={setPage} />;
+  }
+  if (page === 'novel') {
+    return <NovelPage setPage={setPage} />;
+  }
 
-  return (
-    <HomePage />
-  )
 }
 
 export default App

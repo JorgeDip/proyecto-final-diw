@@ -1,0 +1,8 @@
+.novel-synopsis {
+  &__text {
+    background-color: v.$color-surface-background;
+    padding: v.$size-16;
+    border-radius: v.$sizes-radius-8;
+    border: 1px solid v.$color-border-primary;
+  }
+}

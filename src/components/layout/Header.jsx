@@ -5,7 +5,7 @@ import CloseIcon from '../ui/CloseIcon';
 import Logo from '../atoms/Logo';
 import { useState } from 'react';
 
-function Header() {
+function Header({ setPage }) {
     const [isMenuActive, setIsMenuActive] = useState(false);
 
     return (
@@ -15,7 +15,7 @@ function Header() {
                 <Logo />
 
                 <ul className={`navbar__menu ${isMenuActive ? 'active' : ''}`}>
-                    <li className="menu-item"><a href="#">Inicio</a></li>
+                    <li className="menu-item"><a href="" onClick={(e) => { e.preventDefault(); setPage('home'); }}>Inicio</a></li>
                     <li className="menu-item"><a href="#">Biblioteca</a></li>
                     <li className="menu-item"><a href="#">Ranking</a></li>
                     <li className="menu-item"><a href="#">Comunidad</a></li>
