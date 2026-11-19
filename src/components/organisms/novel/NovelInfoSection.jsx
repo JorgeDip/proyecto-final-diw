@@ -1,12 +1,15 @@
 import ImageCard from '../../molecules/ImageCard';
 
 import Pill from '../../atoms/Pill';
+import Button from '../../atoms/Button';
+
 import StarIcon from '../../ui/StarIcon';
 import EyeIcon from '../../ui/EyeIcon';
 import BookmarkIcon from '../../ui/BookmarkIcon';
-import Button from '../../atoms/Button';
+import UserPenIcon from '../../ui/UserPenIcon';
 
 import './NovelInfoSection.scss';
+import RotateClock from '../../ui/RotateClock';
 
 function NovelInfoSection() {
     return (
@@ -22,11 +25,11 @@ function NovelInfoSection() {
                     <div className="novel-page-info__author-container">
                         <p className="novel-page-info__author">
                             <span className="novel-page-info__author-label">Creador</span>
-                            <span className="novel-page-info__author-name">Mo Xuanling</span>
+                            <span className="novel-page-info__author-name"><UserPenIcon /> Mo Xuanling</span>
                         </p>
                         <p className="novel-page-info__frequency">
                             <span className="novel-page-info__frequency-label">Cadencia</span>
-                            <span className="novel-page-info__frequency-value">Semanal</span>
+                            <span className="novel-page-info__frequency-value"><RotateClock /> Semanal</span>
                         </p>
                     </div>
                     <div className="novel-page-info__genre-container">

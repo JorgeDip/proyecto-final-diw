@@ -1,9 +1,90 @@
 .novel-chapters__item {
   display: grid;
-  grid-template-columns: 100px 1fr 100px 100px;
+  grid-template-columns: 1fr 1fr;
+  gap: v.$size-8;
+
+  padding: v.$size-16;
+  border-bottom: 1px solid v.$color-border-primary;
+
+  font-weight: v.$font-weight-bold;
+  cursor: pointer;
+
+  @include respond("large") {
+    padding: v.$size-8 v.$size-16;
+    grid-template-columns: 100px 1fr 100px 100px;
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: v.$color-purple-700;
+  }
 
   &--header {
     font-size: v.$sizes-type-font-size-body-sm;
     font-family: v.$font-family-headings;
+    cursor: default;
+    display: none;
+
+    @include respond("large") {
+      display: grid;
+    }
+
+    &:hover {
+      background-color: v.$color-surface-background;
+    }
+  }
+
+  &-number {
+    order: 1;
+    &--yellow {
+      color: v.$color-yellow-400;
+    }
+  }
+
+  &-title {
+    order: 3;
+    @include respond("large") {
+      order: 2;
+    }
+  }
+
+  &-date {
+    order: 4;
+    justify-self: flex-end;
+
+    @include respond("large") {
+      order: 3;
+      justify-self: flex-start;
+    }
+
+    &--purple {
+      color: v.$color-purple-400;
+    }
+  }
+
+  &-status {
+    display: flex;
+    align-items: center;
+    order: 2;
+    justify-self: flex-end;
+
+    @include respond("large") {
+      order: 4;
+      justify-self: flex-start;
+    }
+
+    &--pending {
+      color: v.$color-purple-400;
+    }
+
+    &--viewed {
+      color: v.$color-yellow-400;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
   }
 }

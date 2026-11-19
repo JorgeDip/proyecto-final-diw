@@ -67,6 +67,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: v.$size-4;
     color: v.$color-text-heading-white;
   }
 
@@ -76,9 +77,19 @@
     color: v.$color-yellow-400;
   }
 
-  &__author-name {
+  &__author-name,
+  &__frequency-value {
+    display: flex;
+    align-items: center;
+    gap: v.$size-4;
     overflow-wrap: anywhere;
     text-align: center;
+
+    svg {
+      width: v.$sizes-icons-20;
+      height: v.$sizes-icons-20;
+      stroke: v.$color-yellow-400;
+    }
   }
 
   &__genre-container {
