@@ -4,7 +4,7 @@ import './styles/main.scss'
 import { useState } from 'react';
 
 function App() {
-  const [page, setPage] = useState('novel');
+  const [page, setPage] = useState('home');
   if (page === 'home') {
     return <HomePage setPage={setPage} />;
   }
