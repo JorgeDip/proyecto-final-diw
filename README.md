@@ -6,6 +6,10 @@
 
 **Página publicada:** [https://jorgedip.github.io/proyecto-final-diw/](https://jorgedip.github.io/proyecto-final-diw/)
 
+**Github:** [https://github.com/JorgeDip/proyecto-final-diw](https://github.com/JorgeDip/proyecto-final-diw)
+
+**Figma:** [https://www.figma.com/design/aKddSCI6EHZOdAcamGGCrd/Ejercicio---Design-System?node-id=0-1&m=dev&t=uld13fJFDTaW2LvE-1](https://www.figma.com/design/aKddSCI6EHZOdAcamGGCrd/Ejercicio---Design-System?node-id=0-1&m=dev&t=uld13fJFDTaW2LvE-1)
+
 ---
 
 ## 1. Descripción
