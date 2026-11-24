@@ -116,9 +116,9 @@ Además, cada componente tiene su propio archivo SCSS con los estilos que le cor
 
 ## 7. Capturas de pantalla
 
-![Mobile](public/images/novel_website_mobile.png)
-![Tablet](public/images/novel_website_tablet.png)
-![Dektop](public/images/novel_website_desktop.png)
+[Mobile](public/images/novel_website_mobile.png)
+[Tablet](public/images/novel_website_tablet.png)
+[Dektop](public/images/novel_website_desktop.png)
 
 ## 8. Conclusiones
 
